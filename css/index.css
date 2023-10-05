@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html,
 body {
-  background-color: #292929;
+  background-color: #101010;
   line-height: 1;
   font-size: 14px;
   font-weight: 400;
@@ -41,6 +42,7 @@ body._lock {
   overflow: hidden;
 }
 
+/*----- для модалок ----*/
 body.lock {
   overflow: hidden;
 }
@@ -54,7 +56,7 @@ body.lock {
 
 /*---------------------------*/
 [class*=__container] {
-  max-width: 1180px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -62,47 +64,230 @@ body.lock {
 /*---------------------------*/
 .page {
   flex: 1 1 auto;
+  position: relative;
 }
 
 /*--------------------------------------*/
 /*--------- Bg style -------------------*/
 /*--------------------------------------*/
-.ibg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/*---------------------------------------------------------------------------------------*/
+/*------------ Buttons style -------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+.yelow_btns {
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 14px 54px;
+  background: #FFE30F;
 }
-.ibg img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 850px;
+.yelow_btns:hover {
+  background: #dbc100;
+}
+
+.yelow_btns-border {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 54px;
+  border: 2px solid #FFE30F;
 }
 
 /*---------------------------------------------------------------------------------------*/
 /*------------ Header style -------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
+.bg-head {
+  background: #101010;
+  transition: all 0.3s ease 0s;
+}
+
 .mobile-menu {
   display: none;
 }
 
 .header {
-  background: #815353;
-  height: 100px;
   z-index: 3;
+  padding: 32px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo span {
+  color: #FFF;
+  font-family: "Conthrax";
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 3.36px;
+  text-transform: uppercase;
+}
+.header__logo p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Conthrax";
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+}
+
+.header__desktop-menu {
+  display: flex;
+}
+.header__desktop-menu .desktop-menu__list {
+  display: flex;
+  margin-right: 32px;
+}
+.header__desktop-menu .desktop-menu__list .desktop-menu__link {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 24px;
+}
+.header__desktop-menu .desktop-menu__list .desktop-menu__link a:hover {
+  color: #FFE30F;
+}
 /*---------------------------------------------------------------------------------------*/
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
+/*------------ main__section style ------------*/
+.main__section {
+  background: url("../img/main-screen.jpg") center/cover no-repeat;
+}
+
+.main__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__img {
+  max-width: 466px;
+  margin-top: 150px;
+}
+.main__content {
+  text-align: center;
+  margin-top: 11px;
+  margin-bottom: 150px;
+}
+.main__content h1 {
+  color: #FFF;
+  font-family: "Conthrax";
+  font-size: 81px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.main__content h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Conthrax";
+  font-size: 30px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+}
+
+/*------------ style ------------*/
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
 .footer {
-  background: #5b5a6d;
-  height: 300px;
+  background: #1B1B1B;
   width: 100%;
+  padding: 65px 0 19px;
+}
+
+.footer__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__col {
+  margin: 15px;
+}
+
+.logo-footer__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-footer__col img {
+  max-width: 141px;
+}
+.logo-footer__col .text__footer {
+  text-align: center;
+  margin-top: 12px;
+}
+.logo-footer__col span {
+  font-family: "Conthrax";
+  font-size: 32px;
+}
+.logo-footer__col p {
+  font-family: "Conthrax";
+  font-size: 14px;
+  -webkit-text-stroke: 0.5px #1B1B1B;
+  text-stroke: 0.5px #1B1B1B;
+}
+
+.col__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 29px;
+}
+
+.col__list .col__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 171%;
+}
+.col__list .col__link .telephone {
+  color: #FFE500;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 75%;
+}
+.col__list .col__link a:hover {
+  color: #FFE30F;
+}
+.col__list .col__link:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.contacts-footer__col {
+  min-width: 310px;
+}
+.contacts-footer__col span {
+  color: #FFE30F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.contacts-footer__col .weekend {
+  color: #7B6D00;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.copyright {
+  margin-top: 60px;
+}
+
+.copyright__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  text-align: center;
 }
 
 /*=========================================================================================*/
@@ -110,7 +295,10 @@ body.lock {
 /*---------------------------- Media queries ----------------------------------------------*/
 /*=========================================================================================*/
 /*=========================================================================================*/
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 959.98px) {
+  .header__desktop-menu {
+    display: none;
+  }
   /*-------- Mobile menu style ---------*/
   .menu__icon {
     display: block;
@@ -121,25 +309,24 @@ body.lock {
     cursor: pointer;
     position: absolute;
     right: 18px;
-    top: 40px;
+    top: 32px;
     border-radius: 6px;
-    background: #D4DF23;
   }
   .menu__icon span {
     position: absolute;
-    left: 3px;
+    left: 0;
     top: 8px;
-    height: 3px;
+    height: 1px;
     width: 24px;
-    background-color: #1A1A1A;
+    background-color: #FFE30F;
     transition: all 0.3s ease 0s;
     border-radius: 2px;
   }
   .menu__icon::before, .menu__icon::after {
     position: absolute;
     left: 0;
-    height: 3px;
-    background-color: #1A1A1A;
+    height: 1px;
+    background-color: #FFE30F;
     transition: all 0.3s ease 0s;
     border-radius: 2px;
   }
@@ -148,13 +335,13 @@ body.lock {
   }
   .menu__icon::before {
     top: 15px;
-    left: 10px;
-    width: 16px;
+    left: 0;
+    width: 24px;
   }
   .menu__icon::after {
     bottom: 7px;
-    left: 18px;
-    width: 8px;
+    left: 0;
+    width: 24px;
   }
   .menu__icon._active span {
     transform: scale(0) translate(0px, -50%);
@@ -174,7 +361,7 @@ body.lock {
   .header__mobile-menu {
     display: block;
     position: absolute;
-    background: #D4DF23;
+    background: #101010;
     top: 0;
     right: 0;
     width: 100%;
@@ -187,62 +374,15 @@ body.lock {
   }
   .header__mobile-menu .logo__mobile {
     position: fixed;
-    top: 20px;
-    left: 18px;
+    top: 32px;
+    left: 10px;
     color: #000;
-  }
-  .header__mobile-menu .logo__mobile span {
-    font-weight: 600;
-  }
-  .header__mobile-menu .logo__mobile h2 {
-    font-weight: 600;
-  }
-  .header__mobile-menu .logo__mobile p {
-    font-weight: 600;
-  }
-  .header__mobile-menu .mobile-menu__list li {
-    font-weight: 700;
-    font-size: 14px;
   }
   .header__mobile-menu .mobile-menu__list li a {
-    color: #000;
+    color: #fff;
   }
   .header__mobile-menu .mobile-menu__list li:not(:last-child) {
     margin-bottom: 44px;
-  }
-  .header__mobile-menu .mobile__sign-up {
-    margin: 90px 0 30px;
-    border-radius: 8px;
-    background: #000;
-    color: #D4DF23;
-    font-size: 14px;
-    font-weight: 800;
-    display: inline-flex;
-    padding: 13px 54px;
-    text-transform: uppercase;
-  }
-  .header__mobile-menu .mobile__logout {
-    display: none;
-  }
-  .header__mobile-menu .mobile__logout .name_human {
-    color: #000;
-    text-align: center;
-    font-family: "Lastica";
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1.68px;
-    margin-bottom: 19px;
-  }
-  .header__mobile-menu .mobile__logout .logout__btn {
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 8px;
-    display: inline-flex;
-    padding: 13px 54px;
-    text-transform: uppercase;
-    color: #000;
-    background: #D4DF23;
-    border: 1px solid #000;
   }
   ._active {
     visibility: visible;
@@ -277,4 +417,42 @@ body.lock {
     margin-top: 35px;
   }
   /*-------- Amd mobile menu style -----------*/
+}
+@media screen and (max-width: 559.98px) {
+  .main__content h1 {
+    font-size: 50px;
+  }
+  .main__content h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .main__content h1 {
+    font-size: 41px;
+  }
+  .main__content h3 {
+    font-size: 16px;
+  }
+  .logo-footer__col {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contacts-footer__col {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .header__logo span {
+    font-size: 14px;
+  }
+  .header__logo p {
+    font-size: 6px;
+    text-align: left;
+    color: #FFE30F;
+    -webkit-text-stroke: 0.3px #000;
+    text-stroke: 0.3px #000;
+  }
+  .menu__icon {
+    top: 26px;
+  }
 }/*# sourceMappingURL=index.css.map */
