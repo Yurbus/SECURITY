@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__body">
+                    <a href="index.html" class="header__logo">
+                        <span>logo</span>
+                    </a>
+                    <div class="header__button">
+                        <a href="#popup" class="signup popup-link">кнопка</a>
+                    </div>
+                </div>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <!-- mobile menu -->
+                <div class="header__mobile-menu mobile-menu">
+                    <a href="index.html" class="header__logo logo__mobile">
+                        <span>logo</span>
+                    </a>
+                    <div class="mobile-menu__body">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__link"><a class="menu__link" href="#">link</a></li>
+                            <li class="mobile-menu__link"><a class="menu__link" data-goto=".page__section_1" href="#">link</a></li>
+                            <li class="mobile-menu__link"><a class="menu__link" data-goto=".page__section_2" href="#">link</a></li> 
+                            <li class="mobile-menu__link"><a class="menu__link" data-goto=".page__section_3" href="#">link</a></li>
+                            <li class="mobile-menu__link"><a class="menu__link" data-goto=".page__section_4" href="#">link</a></li>                 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="main-screen_bg ibg">
+                <img src="img/main-screen.jpg" alt="">
+            </div>
+            <section class="main__section">
+                контент
+                контент
+                контент
+                контент
+    
+            </section>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <div id="popup" class="popup"><!-- Popup -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
+                <form action="" id="form" method="POST" class="form__body">
+                    <h4 class="form__title">Order form</h4>
+                    <p class="form__sub-title">Please enter correct data!</p>
+                    <div class="form__wrapper">
+                        <div class="form__item">
+                            <label for="link">Your link:</label>
+                            <input type="text" id="link" name="Your link" class="form__input input-form" placeholder="Your link:">
+                        </div>
+                        <!-- /////////////////////////////// -->
+                        <div class="form__group">
+                            <div class="form__item">
+                                <label for="linkk">IDR price:</label>
+                                <input type="text" id="linkk" name="IDR price" class="form__input input-form" placeholder="IDR price">
+                            </div>
+                            <div class="form__item">
+                                <label for="link1">Type of delivery:</label>
+                                <select id="link1" name="select" >
+                                    <option value="value1" disabled selected hidden>Express</option>
+                                    <option value="value2">Express 2</option>
+                                    <option value="value3">Express 3</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <label for="link2">Type of delivery:</label>
+                                <select id="link2" name="select">
+                                    <option value="value1" disabled selected hidden>Swift</option>
+                                    <option value="value2">Swift 2</option>
+                                    <option value="value3">Swift 3</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <label for="link3">Quantity:</label>
+                                <input type="text" id="link3" name="Quantity" class="form__input input-form" placeholder="1">
+                            </div>
+                        </div>
+                        <!-- /////////////////////////////// -->
+                        <div class="form__item">
+                            <label for="link4">Adress to delivery:</label>
+                            <input type="text" id="link4" name="Adress" class="form__input input-form" placeholder="Adress">
+                        </div>
+                        <div class="form__item">
+                            <label for="link5">Note:</label>
+                            <textarea name="" id="link5" rows="6" placeholder="Specify delivery details"></textarea>
+                        </div>
+                        <!-- /////////////////////////////// -->
+                        <div class="form__group-2">
+                            <div class="form__item">
+                                <label for="link6">Full name:</label>
+                                <input type="text" id="link6" name="Full name" class="form__input input-form" placeholder="Full name">
+                            </div>
+                            <div class="form__item">
+                                <label for="link7">Phone:</label>
+                                <input type="text" id="link7" name="Phone" class="form__input input-form" placeholder="Phone">
+                            </div>
+                            <div class="form__item">
+                                <label for="link8">Telegram:</label>
+                                <input type="text" id="link8" name="Telegram" class="form__input input-form" placeholder="Telegram">
+                            </div>
+                        </div>
+                        <!-- /////////////////////////////// -->
+                        <div class="form__item">
+                            <label for="link9">Email:</label>
+                            <input type="text" id="link9" name="Email" class="form__input input-form" placeholder="Email ">
+                        </div>
+                        <button type="submit" class="submit">Buy now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- End popup -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/popups.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script>
+        var button2 = document.getElementById("showEye2");
+        button2.onclick = showEye2;
+
+        var input2 = document.getElementById("show2");
+        var icon = document.getElementById("i");
+    
+        function showEye2 () {
+            if(input2.getAttribute('type') == 'password') {
+                input2.removeAttribute('type');
+                input2.setAttribute('type', 'text')
+                button2.innerHTML='<i id="i" class="far fa-eye-slash">';
+            } else {
+                input2.removeAttribute('type');
+                input2.setAttribute('type', 'password');
+                button2.innerHTML='<i id="i" class="far fa-eye">';
+            }
+        }
+    </script>
+
+</body>
+</html>
