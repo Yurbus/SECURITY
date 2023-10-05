@@ -58,6 +58,38 @@ window.addEventListener('scroll', function() {
 
 })
 
+// Прокрутка чисел на странице про центр
+// var time = 2, cc = 1;
+// $(window).scroll(function() {
+// 	$('#skills__body').each(function() {
+// 		var cPos = $(this).offset().top,
+// 		topWindow = $(Window).scrollTop();
+// 		if (cPos < topWindow + 400) {
+// 			if (cc < 2) {
+// 				$('div').each(function() {
+// 					var
+// 					i = 1,
+// 					num = $(this).data('num'),
+// 					step = 1000 * time / num,
+// 					that = $(this),
+// 					int = setInterval(function() {
+// 						if (i <= num) {
+// 							that.html(i);
+// 						}
+// 						else {
+// 							cc = cc + 2;
+// 							clearInterval(int);
+// 						}
+// 						i ++;
+// 					}, step); 
+// 				});
+// 			}
+// 		}
+// 	});
+// });
+
+
+
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {
