@@ -87,18 +87,24 @@ body.lock {
 }
 
 .yelow_btns-border {
+  display: inline-block;
   color: #FFF;
   font-size: 15px;
   font-weight: 500;
   padding: 14px 54px;
   border: 2px solid #FFE30F;
+  transition: all 0.3s ease 0s;
+}
+.yelow_btns-border:hover {
+  background: #FFE30F;
+  color: #101010;
 }
 
 /*---------------------------------------------------------------------------------------*/
 /*------------ Header style -------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 .bg-head {
-  background: #101010;
+  background: rgba(16, 16, 16, 0.95);
   transition: all 0.3s ease 0s;
 }
 
@@ -195,7 +201,193 @@ body.lock {
   text-stroke: 1px #000;
 }
 
-/*------------ style ------------*/
+/*------------ About style ------------*/
+.about {
+  padding: 125px 0 75px;
+}
+
+.about__title {
+  max-width: 550px;
+  margin-bottom: 24px;
+}
+
+.title__h2 {
+  color: #FFF;
+  font-family: "Conthrax";
+  font-size: 48px;
+  letter-spacing: 5.76px;
+  text-transform: uppercase;
+}
+
+.about__body {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  gap: 30px;
+}
+
+.about__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.about__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 410px;
+}
+
+.read__more {
+  display: flex;
+  justify-content: center;
+}
+.read__more .more {
+  margin-top: 106px;
+  transition: all 0.3s ease 0s;
+}
+.read__more .more:hover {
+  background: #FFE30F;
+  color: #101010;
+}
+
+.skills__container {
+  margin-top: 64px;
+  background: #181818;
+  padding: 32px;
+}
+
+.skills__body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.skills__counter .skills__item {
+  color: #FFE30F;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.skills__text {
+  font-family: "Conthrax";
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*------------  Service style ------------*/
+.service {
+  padding: 40px 0 65px;
+}
+
+.service__title {
+  margin-bottom: 64px;
+}
+.service__title span {
+  color: #FFE30F;
+}
+
+.service__image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.service__content .service__content-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.service__content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.dots__list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 64px 0;
+}
+.dots__list .dots__link {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: 5px 32px 5px 0;
+}
+.dots__list .dots__link .yellow__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: #FFE30F;
+  margin-right: 12px;
+}
+
+.item__slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/*------ slider -------*/
+.slider {
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+/*------ arrow -------*/
+/*------ dots -------*/
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  margin: 0 3px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background: #FFE500;
+}
+
+/*------------  style ------------*/
+/*------------  style ------------*/
+/*------------  style ------------*/
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -418,12 +610,70 @@ body.lock {
   }
   /*-------- Amd mobile menu style -----------*/
 }
+@media screen and (max-width: 859.98px) {
+  .about__body {
+    grid-template-columns: 1fr;
+  }
+  .about__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 440px;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .skills__body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__column {
+    margin-bottom: 32px;
+  }
+  .skills__column:last-child {
+    margin-bottom: 0;
+  }
+  .item__slide {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 559.98px) {
   .main__content h1 {
     font-size: 50px;
   }
   .main__content h3 {
     font-size: 20px;
+  }
+  .about__image img {
+    height: auto;
+  }
+  .title__h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    line-height: 1.2;
+  }
+  .service__content .service__content-title {
+    font-size: 18px;
+  }
+  .service__content p {
+    font-size: 12px;
+  }
+  .dots__list {
+    margin: 20px 0;
+    justify-content: space-between;
+  }
+  .dots__list .dots__link {
+    font-size: 8px;
+    margin: 5px 0;
+  }
+  .dots__list .dots__link .yellow__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+  .yelow_btns-border {
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 479.98px) {
@@ -439,6 +689,28 @@ body.lock {
   }
   .contacts-footer__col {
     margin-top: 40px;
+  }
+  .about {
+    padding: 72px 0 36px;
+  }
+  .title__h2 {
+    font-size: 24px;
+  }
+  .about__content p {
+    font-size: 12px;
+  }
+  .read__more .more {
+    margin-top: 32px;
+  }
+  .skills__column {
+    max-width: 240px;
+  }
+  .skills__counter .skills__item {
+    font-size: 32px;
+  }
+  .skills__text {
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
 @media screen and (max-width: 414.98px) {
