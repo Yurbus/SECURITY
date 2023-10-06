@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 html,
 body {
   background-color: #101010;
-  line-height: 1;
+  line-height: 1.1;
   font-size: 14px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -94,6 +94,7 @@ body.lock {
   padding: 14px 54px;
   border: 2px solid #FFE30F;
   transition: all 0.3s ease 0s;
+  display: inline-block;
 }
 .yelow_btns-border:hover {
   background: #FFE30F;
@@ -218,6 +219,9 @@ body.lock {
   letter-spacing: 5.76px;
   text-transform: uppercase;
 }
+.title__h2 span {
+  color: #FFE30F;
+}
 
 .about__body {
   display: grid;
@@ -290,9 +294,6 @@ body.lock {
 
 .service__title {
   margin-bottom: 64px;
-}
-.service__title span {
-  color: #FFE30F;
 }
 
 .service__image img {
@@ -385,9 +386,169 @@ body.lock {
   background: #FFE500;
 }
 
-/*------------  style ------------*/
-/*------------  style ------------*/
-/*------------  style ------------*/
+/*------------ Advantages style ------------*/
+.advantages {
+  padding: 65px 0 70px;
+}
+
+.advantages__title {
+  margin-bottom: 64px;
+}
+
+.advantages__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #171717;
+  padding: 64px 46px 100px;
+  transition: all 0.3s ease 0s;
+}
+.advantages__item:hover {
+  background: #1f1f1f;
+}
+
+.item__image {
+  max-width: 66px;
+  margin-bottom: 12px;
+}
+
+.item__title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: center;
+}
+
+.item__border {
+  background: #B8B8B8;
+  height: 1px;
+  width: 167px;
+  margin: 10px 0;
+}
+
+.item__text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.details {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 130%;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/*------------ Partners style ------------*/
+.partners {
+  padding: 70px 0 75px;
+}
+
+.partners__title {
+  margin-bottom: 64px;
+}
+
+.partners__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.partners__item {
+  max-width: 266px;
+}
+
+/*------------ Feedback style ------------*/
+.feedback {
+  padding: 75px 0 140px;
+}
+
+.feedback__title {
+  margin-bottom: 64px;
+}
+.feedback__title .title__h2 {
+  letter-spacing: 0;
+}
+.feedback__title .title_h2-right {
+  text-align: right;
+}
+
+.feedback__body {
+  display: flex;
+}
+
+.consultation {
+  background: #1A1A1A;
+  padding: 64px 58px;
+  width: 660px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form__group {
+  margin-top: 48px;
+}
+
+.form__item {
+  margin-bottom: 18px;
+}
+
+.input-form {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 14px 10px;
+  width: 100%;
+}
+
+.input-form::-moz-placeholder {
+  color: #5F5F5F;
+}
+
+.input-form::placeholder {
+  color: #5F5F5F;
+}
+
+.submit {
+  border: none;
+  cursor: pointer;
+  margin-top: 34px;
+}
+
+.feedback__image {
+  max-width: 492px;
+  background: #FFE30F;
+  padding: 22px 17px 22px 0;
+}
+.feedback__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -484,12 +645,16 @@ body.lock {
 
 /*=========================================================================================*/
 /*=========================================================================================*/
-/*---------------------------- Media queries ----------------------------------------------*/
+/*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
 @media screen and (max-width: 959.98px) {
   .header__desktop-menu {
     display: none;
+  }
+  .header__button-mobile {
+    display: block;
+    margin-top: 50px;
   }
   /*-------- Mobile menu style ---------*/
   .menu__icon {
@@ -572,6 +737,8 @@ body.lock {
   }
   .header__mobile-menu .mobile-menu__list li a {
     color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
   }
   .header__mobile-menu .mobile-menu__list li:not(:last-child) {
     margin-bottom: 44px;
@@ -609,6 +776,16 @@ body.lock {
     margin-top: 35px;
   }
   /*-------- Amd mobile menu style -----------*/
+  .advantages__body {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .advantages__item {
+    padding: 50px 26px;
+  }
+  .consultation {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 859.98px) {
   .about__body {
@@ -635,6 +812,20 @@ body.lock {
   }
   .item__slide {
     grid-template-columns: 1fr;
+  }
+  .consultation {
+    width: 374px;
+    padding: 50px 40px;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .form__sub-title {
+    font-size: 12px;
+  }
+  .feedback__title .title__h2 {
+    font-size: 32px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 559.98px) {
@@ -675,6 +866,32 @@ body.lock {
     width: 100%;
     text-align: center;
   }
+  .advantages__item {
+    padding: 40px 20px;
+  }
+  .item__image {
+    max-width: 48px;
+  }
+  .item__title {
+    font-size: 18px;
+  }
+  .item__text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .partners__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feedback__body {
+    flex-direction: column;
+  }
+  .consultation {
+    width: 100%;
+    padding: 40px 30px;
+  }
+  .feedback__image {
+    display: none;
+  }
 }
 @media screen and (max-width: 479.98px) {
   .main__content h1 {
@@ -712,6 +929,21 @@ body.lock {
     font-size: 14px;
     line-height: 1.2;
   }
+  .advantages__body {
+    grid-template-columns: 1fr;
+  }
+  .feedback__title {
+    margin-bottom: 32px;
+  }
+  .feedback__title .title__h2 {
+    font-size: 20px;
+  }
+  .form__group {
+    margin-top: 20px;
+  }
+  .submit {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 414.98px) {
   .header__logo span {
@@ -726,5 +958,8 @@ body.lock {
   }
   .menu__icon {
     top: 26px;
+  }
+  .col__list .col__link .telephone {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=index.css.map */
