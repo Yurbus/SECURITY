@@ -161,6 +161,7 @@ body.lock {
 .header__desktop-menu .desktop-menu__list .desktop-menu__link a:hover {
   color: #FFE30F;
 }
+
 /*---------------------------------------------------------------------------------------*/
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
@@ -216,7 +217,7 @@ body.lock {
   color: #FFF;
   font-family: "Conthrax";
   font-size: 48px;
-  letter-spacing: 5.76px;
+  letter-spacing: 4.76px;
   text-transform: uppercase;
 }
 .title__h2 span {
