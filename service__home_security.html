@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SECURITY SERVICE</title>
+    <title>Охорона житла</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/service__home_security.css">
     <link rel="stylesheet" href="css/popups.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -29,7 +30,7 @@
                             <li class="desktop-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="#">Послуги</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="#">Акції</a></li> 
-                            <li class="desktop-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>
+                            <li class="desktop-menu__link"><a class="menu__link" href="#">Контакти</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="#">Ціни</a></li>                 
                         </ul>
                         <div class="header__button">
@@ -52,7 +53,7 @@
                             <li class="mobile-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
                             <li class="mobile-menu__link"><a class="menu__link" href="#">Послуги</a></li>
                             <li class="mobile-menu__link"><a class="menu__link" href="#">Акції</a></li> 
-                            <li class="mobile-menu__link"><a class="menu__link" href="#">Контакти</a></li>
+                            <li class="mobile-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>
                             <li class="mobile-menu__link"><a class="menu__link" href="#">Ціни</a></li>                 
                         </ul>
                     </div>
@@ -64,204 +65,200 @@
             </div>
         </header>
         <main class="page">
-            <!-- <div class="main-screen_bg ibg">
-                <img src="img/main-screen.jpg" alt="">
-            </div> -->
             <section class="main__section">
                 <div class="main__container">
                     <div class="main__body">
-                        <div data-aos="fade-up" class="main__img">
-                            <img src="img/otaman.png" alt="">
+                        <div aria-label="Breadcrumb" class="breadcrumb">
+                            <ul>
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="#">Послуги</a></li>
+                                <li><span aria-current="page">Охорона житла</span></li>
+                            </ul>
                         </div>
-                        <div data-aos="fade-up" class="main__content">
-                            <h1>OTAMAN</h1>
-                            <h3>SECURITY SERVICE</h3>
-                        </div>
+                        <h1 class="main__title">Охорона житла</h1>
+                        <p>Почему он используется?
+                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает 
+                            сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более 
+                            или менее стандартное заполнение шаблона, а также реальное распределение букв 
+                            и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш 
+                            текст..
+                        </p>
+                        <a href="" class="main__service-btn yelow_btns">Замовити</a>
+                    </div>
+                    <div class="main__price">
+                        <div class="cost">Вартість:</div>
+                        <div class="number">728<span>грн</span></div>
                     </div>
                 </div>
             </section>
+            <section class="type-house">
+                <div class="type-house__container">
+                    <h2 class="type-house__title title__h2">Оберіть тип житла</h2>
+                    <div class="type-house__body">
 
-            <section class="about">
-                <div class="about__container">
-                    <div data-aos="fade-up" class="about__body">
-                        <div class="about__content">
-                            <h2 class="about__title title__h2">Про нашу компанію</h2>
-                            <p>SECURITY SERVICE «OTAMAN» - молода компанія, яка об’єднала справжніх молодих професіоналів 
-                                з досвідом роботи у сфері охоронних послуг. Багаторічний досвід кожного, професійні кадри 
-                                та сучасне обладнання компанії дозволяють «Отаманам» здійснювати моніторинг об’єктів 
-                                замовників24/7, блискавично реагувати на небезпеку, надавати безперебійну технічну підтримку 
-                                та забезпечувати повний захист Вашої квартири, Вашого будинку, Вашого бізнес-об’єкту, вашу 
-                                приватну охорону. Забезпечте свій спокій заздалегідь завдяки справжнім професіоналам, охоронній 
-                                компанії «OTAMAN»! «Отамани» - Ваша стовідсоткова безпека!
-                            </p>
-                        </div>
-                        <div class="about__image">
-                            <img src="img/about.jpg" alt="image">
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class="read__more">
-                        <a href="" class="more yelow_btns-border">Детальніше</a>
-                    </div>
-                    <div data-aos="fade-up" class="skills__container">
-                        <div class="skills__body" id="skills__body">
-                            <div class="skills__column">
-                                <div class="skills__counter">
-                                    <div data-num="500" class="skills__item">500</div>
-                                </div>
-                                <div class="skills__text">Першокласних охоронів</div>
+                        <div onclick="location.href='';" class="house__item">
+                            <div class="item__image">
+                                <img src="img/service/color_img/house1.jpg" alt="">
                             </div>
-                            <div class="skills__column">
-                                <div class="skills__counter">
-                                    <div data-num="4530" class="skills__item">4530</div>
-                                </div>
-                                <div class="skills__text">Задоволених та захищених клієнтів</div>
+                            <div class="item__text">
+                                <h3>Охорона будинку</h3>
                             </div>
-                            <div class="skills__column">
-                                <div class="skills__counter">
-                                    <div data-num="12" class="skills__item">12</div>
+                        </div>
+                        <div onclick="location.href='';" class="house__item">
+                            <div class="item__image">
+                                <img src="img/service/color_img/house2.jpg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h3>Охорона ЖК</h3>
+                            </div>
+                        </div>
+                        <div onclick="location.href='';" class="house__item">
+                            <div class="item__image">
+                                <img src="img/service/color_img/house3.jpg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h3>Охорона ДАЧІ</h3>
+                            </div>
+                        </div>
+                        <div onclick="location.href='';" class="house__item">
+                            <div class="item__image">
+                                <img src="img/service/color_img/house4.jpg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h3>Охорона Квартири</h3>
+                            </div>
+                        </div>
+                        <div onclick="location.href='';" class="house__item">
+                            <div class="item__image">
+                                <img src="img/service/color_img/house5.jpg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h3>Охорона Котеджу</h3>
+                            </div>
+                        </div>
+                        <div onclick="location.href='';" class="house__item">
+                            <div class="item__image">
+                                <img src="img/service/color_img/house6.jpg" alt="">
+                            </div>
+                            <div class="item__text">
+                                <h3>Охорона приміщення</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        
+            <section class="security_system">
+                <div class="security_system__container">
+                    <h2 class="security_system__title title__h2">Як ми пропонуємо захистити житло</h2>
+                    <div class="security_system__body">
+
+
+                        <div class="container">
+                            <div class="tab">
+                                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-1">Моніторинг система</label>
+                                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-2">Системи сигналізації</label>
+                                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-3">Постова охорона</label>
+                                <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-4">Пультова охорона</label>
+
+                                <div class="tab-content" id="content-1">
+                                    <div class="tabContent-in">
+                                        <div class="tabContent__img">
+                                            <img src="img/service/monitoring.jpg" alt="">
+                                        </div>
+                                        <div class="tabContent__text">
+                                            <h4>Моніторинг системи 1</h4>
+                                            <p>Ваші бізнес-об’єкти, житло, приміщення, майно будуть під нашим наглядом 24/7 завдяки постійній роботі 
+                                                систем моніторингу, а саме сучасних та високотехнологічних систем відеонагляду, що будуть встановлені 
+                                                нашою службою техпідтримки
+                                            </p>
+                                        </div>
                                     </div>
-                                <div class="skills__text">Єкіпажей швидкого реагування</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="service">
-                <div class="service__container">
-                    <h2 data-aos="fade-up" class="service__title title__h2">Послуги для <span>вашої безпеки</span></h2>
-                    <div class="service__body">
-
-                        <!-- <div class="slider"> -->
-                            <div data-aos="fade-up" data-aos-delay="200" class="item__slide">
-                                <div class="service__image">
-                                    <img src="img/service.jpg" alt="image">
                                 </div>
-                                <div class="service__content">
-                                    <h3 class="service__content-title">Охорона  комерційних об'єктів</h3>
-                                    <p>Замовляючи цю послугу, Ви можете бути впевнені, що 24 години на добу, 7 днів на тиждень 
-                                        спеціалісти SECURITY SERVICE «OTAMAN» будуть поруч з Вами, щоби захистити Ваше майно 
-                                        та Ваш спокій. Жодна загроза не пройде поза нашою увагою. Швидке реагування та щодобовий 
-                                        доступ наших професіоналів саме для Вас!
-                                    </p>
-                                    <ul class="dots__list">
-                                        <li class="dots__link"><div class="yellow__dot"></div>Для бізнесу</li> 
-                                        <li class="dots__link"><div class="yellow__dot"></div>Для обьектів</li>
-                                        <li class="dots__link"><div class="yellow__dot"></div>Для Дому</li>
-                                    </ul>
-                                    <div class="service__button">
-                                        <a href="" class="service__more yelow_btns-border">Детальніше</a>
+                                <div class="tab-content" id="content-2">
+                                    <div class="tabContent-in">
+                                        <div class="tabContent__img">
+                                            <img src="img/service/monitoring2.jpg" alt="">
+                                        </div>
+                                        <div class="tabContent__text">
+                                            <h4>Моніторинг системи 2</h4>
+                                            <p>Ваші бізнес-об’єкти, житло, приміщення, майно будуть під нашим наглядом 24/7 завдяки постійній роботі 
+                                                систем моніторингу, а саме сучасних та високотехнологічних систем відеонагляду, що будуть встановлені 
+                                                нашою службою техпідтримки
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="tab-content" id="content-3">
+                                    <div class="tabContent-in">
+                                        <div class="tabContent__img">
+                                            <img src="img/service/monitoring3.jpg" alt="">
+                                        </div>
+                                        <div class="tabContent__text">
+                                            <h4>Моніторинг системи 3</h4>
+                                            <p>Ваші бізнес-об’єкти, житло, приміщення, майно будуть під нашим наглядом 24/7 завдяки постійній роботі 
+                                                систем моніторингу, а саме сучасних та високотехнологічних систем відеонагляду, що будуть встановлені 
+                                                нашою службою техпідтримки
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="content-4">
+                                    <div class="tabContent-in">
+                                        <div class="tabContent__img">
+                                            <img src="img/service/monitoring4.jpg" alt="">
+                                        </div>
+                                        <div class="tabContent__text">
+                                            <h4>Моніторинг системи 4</h4>
+                                            <p>Ваші бізнес-об’єкти, житло, приміщення, майно будуть під нашим наглядом 24/7 завдяки постійній роботі 
+                                                систем моніторингу, а саме сучасних та високотехнологічних систем відеонагляду, що будуть встановлені 
+                                                нашою службою техпідтримки
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-1">Моніторинг система</label>
+                                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-2">Системи сигналізації</label>
+                                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-3">Постова охорона</label>
+                                <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+                                <label for="tab-btn-4">Пультова охорона</label> -->
                             </div>
-                        <!-- </div> -->
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </section>
 
-            <section class="advantages">
-                <div class="advantages__container">
-                    <h2 data-aos="fade-up" class="advantages__title title__h2">Переваги <span>співпраці</span></h2>
-                    <div data-aos="fade-up" data-aos-delay="200" class="advantages__body">
-                        <div class="advantages__item">
-                            <div class="item__image"><img src="img/icon-park-outline_alarm.svg" alt=""></div>
-                            <h3 class="item__title">Швидкість реагування</h3>
-                            <div class="item__border"></div>
-                            <p class="item__text">Підключіть своє житло під охорону
-                                ВЕНБЕСТ та живіть без страху втрати власності.
-                            </p>
-                            <a href="" class="details">Докладніше</a>
-                        </div>
-                        <div class="advantages__item">
-                            <div class="item__image"><img src="img/security.svg" alt=""></div>
-                            <h3 class="item__title">Досвідчені спеціалісти</h3>
-                            <div class="item__border"></div>
-                            <p class="item__text">Безпека бізнесу – це ключовий фактор
-                                розвитку підприємства, ми надамо рішення захисту під Ваші потреби.
-                            </p>
-                            <a href="" class="details">Докладніше</a>
-                        </div>
-                        <div class="advantages__item">
-                            <div class="item__image"><img src="img/user.svg" alt=""></div>
-                            <h3 class="item__title">Великий досвід роботи</h3>
-                            <div class="item__border"></div>
-                            <p class="item__text">Персональна охорона, супровід,
-                                інкасація, постова охорона.
-                            </p>
-                            <a href="" class="details">Докладніше</a>
-                        </div>
-                        <div class="advantages__item">
-                            <div class="item__image"><img src="img/material-symbols_connect.svg" alt=""></div>
-                            <h3 class="item__title">Сучасне обладннання</h3>
-                            <div class="item__border"></div>
-                            <p class="item__text">Підключіть своє житло під охорону
-                                ВЕНБЕСТ та живіть без страху втрати власності.
-                            </p>
-                            <a href="" class="details">Докладніше</a>
-                        </div>
-                        <div class="advantages__item">
-                            <div class="item__image"><img src="img/noto-v1_eleven-oclock.svg" alt=""></div>
-                            <h3 class="item__title">Безпека 24/7</h3>
-                            <div class="item__border"></div>
-                            <p class="item__text">Безпека бізнесу – це ключовий фактор
-                                розвитку підприємства, ми надамо рішення захисту під Ваші потреби.
-                            </p>
-                            <a href="" class="details">Докладніше</a>
-                        </div>
-                        <div class="advantages__item">
-                            <div class="item__image"><img src="img/game-icons_ak47u.svg" alt=""></div>
-                            <h3 class="item__title">Легальні засоби захисту</h3>
-                            <div class="item__border"></div>
-                            <p class="item__text">Персональна охорона, супровід,
-                                інкасація, постова охорона.
-                            </p>
-                            <a href="" class="details">Докладніше</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="partners">
-                <div class="partners__container">
-                    <h2  data-aos="fade-up" class="partners__title title__h2">НАМ <span>ДОВІРЯЮТЬ</span></h2>
-                    <div  data-aos="fade-up" data-aos-delay="200" class="partners__body">
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                        <div class="partners__item">
-                            <img src="img/bravida.png" alt="icon">
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <section class="feedback">
                 <div class="feedback__container">
-                    <div  data-aos="fade-up" class="feedback__title">
+                    <div class="feedback__title">
                         <h2 class="title__h2">Захисти свій бізнес</h2>
                         <h2 class="title__h2 title_h2-right">та себе <span>вже зараз!</span></h2>
                     </div>
                     <div class="feedback__body">
                         <div class="feedback__form">
-                            <form  data-aos="fade-up" data-aos-delay="200" action="" class="consultation">
+                            <form action="" class="consultation">
                                 <h4 class="form__title">Оформлення консультації</h4>
                                 <p class="form__sub-title">Будь ласка, введіть корректно ваші данні</p>
 
@@ -280,7 +277,7 @@
                                 <button type="submit" class="submit yelow_btns">Замовити захист</button>
                             </form>
                         </div>
-                        <div  data-aos="fade-up" data-aos-delay="200" class="feedback__image">
+                        <div class="feedback__image">
                             <img src="img/consultation.jpg" alt="">
                         </div>
                     </div>
