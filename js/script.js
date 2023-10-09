@@ -79,6 +79,10 @@ $('.skills__item').each(function () {
 });
 
 
+
+
+
+
 // Прокрутка при клике
 // const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 // if(menuLinks.length > 0) {
