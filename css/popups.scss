@@ -46,9 +46,73 @@
 
 .popup__close {
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 20px;
+	right: 20px;
 	display: block;
 	width: 15px;
 	height: 15px;
+}
+/*------------ Form style -----------------------*/
+.form__body {
+	background: #1A1A1A;
+	padding: 60px 50px;
+}
+.form__title {
+	font-family: Conthrax;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.form__sub-title {
+	text-transform: none;
+}
+.form__wrapper {
+	margin-top: 40px;
+}
+.form__group {
+}
+.form__item label{
+	font-family: Conthrax;
+}
+.input-form {
+}
+.submit {
+}
+.yelow_btns {
+}
+.policy__check {
+	display: flex;
+	margin-top: 30px;
+	label {
+		font-size: 14px;
+		font-weight: 300;
+		a {
+			color: #FFE30F;
+			text-decoration: underline;
+		}
+	}
+	input[type=checkbox] {
+		display: none;
+	}
+	input[type=checkbox] + label:before {
+		content: '';
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 1px;
+		border: 1px solid #FFE30F;
+		margin: -2px 20px 0 0;
+		height: 24px;
+		width: 24px;
+		text-align: center;
+		vertical-align: middle;
+		transition: color ease .3s;
+	}
+	input[type=checkbox]:checked + label:before {
+		background: #FFE30F;
+		content: url(../img/check.svg);
+	}
 }
