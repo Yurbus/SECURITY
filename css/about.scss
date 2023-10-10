@@ -1016,6 +1016,15 @@ body.lock {
 			}
 		}
 	}
+	.reviews__item {
+		padding: 30px 25px;
+		.review__name-block {
+			flex-direction: column;
+		}
+		.block__right {
+			margin-top: 18px;
+		}
+	}
 
 }
 @media screen and (max-width: 375.98px){
