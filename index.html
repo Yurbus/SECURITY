@@ -27,8 +27,8 @@
                     <div class="header__desktop-menu">
                         <ul class="desktop-menu__list">
                             <li class="desktop-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
-                            <li class="desktop-menu__link"><a class="menu__link" href="#">Послуги</a></li>
-                            <li class="desktop-menu__link"><a class="menu__link" href="#">Акції</a></li> 
+                            <li class="desktop-menu__link"><a class="menu__link" href="service.html">Послуги</a></li>
+                            <li class="desktop-menu__link"><a class="menu__link" href="">Акції</a></li> 
                             <li class="desktop-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="#">Ціни</a></li>                 
                         </ul>
@@ -50,9 +50,9 @@
                     <div class="mobile-menu__body">
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
-                            <li class="mobile-menu__link"><a class="menu__link" href="#">Послуги</a></li>
-                            <li class="mobile-menu__link"><a class="menu__link" href="#">Акції</a></li> 
-                            <li class="mobile-menu__link"><a class="menu__link" href="#">Контакти</a></li>
+                            <li class="mobile-menu__link"><a class="menu__link" href="service.html">Послуги</a></li>
+                            <li class="mobile-menu__link"><a class="menu__link" href="">Акції</a></li> 
+                            <li class="mobile-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>
                             <li class="mobile-menu__link"><a class="menu__link" href="#">Ціни</a></li>                 
                         </ul>
                     </div>
@@ -303,8 +303,8 @@
                         <div class="col__title">Меню:</div>
                         <ul class="col__list">
                             <li class="col__link"><a href="about.html">Про компанію</a></li>
-                            <li class="col__link"><a href="">Відгуки</a></li>
-                            <li class="col__link"><a href="">Послуги</a></li>
+                            <li class="col__link"><a href="about.html#reviews">Відгуки</a></li>
+                            <li class="col__link"><a href="service.html">Послуги</a></li>
                             <li class="col__link"><a href="">Акції</a></li>
                         </ul>
                     </div>
@@ -339,70 +339,30 @@
             <div class="popup__content">
                 <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
                 <form action="" id="form" method="POST" class="form__body">
-                    <h4 class="form__title">Order form</h4>
-                    <p class="form__sub-title">Please enter correct data!</p>
+                    <h4 class="form__title">Замовити консультацію</h4>
+                    <p class="form__sub-title">Будь ласка, введіть корректно ваші данні</p>
                     <div class="form__wrapper">
-                        <div class="form__item">
-                            <label for="link">Your link:</label>
-                            <input type="text" id="link" name="Your link" class="form__input input-form" placeholder="Your link:">
-                        </div>
-                        <!-- /////////////////////////////// -->
+                    
                         <div class="form__group">
                             <div class="form__item">
-                                <label for="linkk">IDR price:</label>
-                                <input type="text" id="linkk" name="IDR price" class="form__input input-form" placeholder="IDR price">
+                                <label for="name">Ім'я:</label>
+                                <input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
                             </div>
                             <div class="form__item">
-                                <label for="link1">Type of delivery:</label>
-                                <select id="link1" name="select" >
-                                    <option value="value1" disabled selected hidden>Express</option>
-                                    <option value="value2">Express 2</option>
-                                    <option value="value3">Express 3</option>
-                                </select>
+                                <label for="phone">Телефон:</label>
+                                <input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
                             </div>
                             <div class="form__item">
-                                <label for="link2">Type of delivery:</label>
-                                <select id="link2" name="select">
-                                    <option value="value1" disabled selected hidden>Swift</option>
-                                    <option value="value2">Swift 2</option>
-                                    <option value="value3">Swift 3</option>
-                                </select>
-                            </div>
-                            <div class="form__item">
-                                <label for="link3">Quantity:</label>
-                                <input type="text" id="link3" name="Quantity" class="form__input input-form" placeholder="1">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
                             </div>
                         </div>
-                        <!-- /////////////////////////////// -->
-                        <div class="form__item">
-                            <label for="link4">Adress to delivery:</label>
-                            <input type="text" id="link4" name="Adress" class="form__input input-form" placeholder="Adress">
+                        <div class="policy__check">
+                            <input type="checkbox" id="policy" name="interest" value="policy" />
+                            <label for="policy">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
                         </div>
-                        <div class="form__item">
-                            <label for="link5">Note:</label>
-                            <textarea name="" id="link5" rows="6" placeholder="Specify delivery details"></textarea>
-                        </div>
-                        <!-- /////////////////////////////// -->
-                        <div class="form__group-2">
-                            <div class="form__item">
-                                <label for="link6">Full name:</label>
-                                <input type="text" id="link6" name="Full name" class="form__input input-form" placeholder="Full name">
-                            </div>
-                            <div class="form__item">
-                                <label for="link7">Phone:</label>
-                                <input type="text" id="link7" name="Phone" class="form__input input-form" placeholder="Phone">
-                            </div>
-                            <div class="form__item">
-                                <label for="link8">Telegram:</label>
-                                <input type="text" id="link8" name="Telegram" class="form__input input-form" placeholder="Telegram">
-                            </div>
-                        </div>
-                        <!-- /////////////////////////////// -->
-                        <div class="form__item">
-                            <label for="link9">Email:</label>
-                            <input type="text" id="link9" name="Email" class="form__input input-form" placeholder="Email ">
-                        </div>
-                        <button type="submit" class="submit">Buy now</button>
+
+                        <button type="submit" class="submit yelow_btns">Замовити захист</button>
                     </div>
                 </form>
             </div>
