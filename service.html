@@ -204,15 +204,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
-                                <label for="tab-btn-1">Моніторинг система</label>
-                                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
-                                <label for="tab-btn-2">Системи сигналізації</label>
-                                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
-                                <label for="tab-btn-3">Постова охорона</label>
-                                <input id="tab-btn-4" name="tab-btn" type="radio" value="">
-                                <label for="tab-btn-4">Пультова охорона</label> -->
                             </div>
                         </div>
 
@@ -282,6 +273,10 @@
                                         <input type="tel" name="Phone" class="form__input input-form" placeholder="Контакти">
                                     </div>
                                 </div>
+                                <div class="policy__check">
+                                    <input type="checkbox" id="policy" name="interest" value="policy" />
+                                    <label for="policy">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+                                </div>
 
                                 <button type="submit" class="submit yelow_btns">Замовити захист</button>
                             </form>
@@ -305,7 +300,7 @@
                             <p>SECURITY SERVICE</p>
                         </div>
                     </div>
-                    <div  data-aos="fade-up" data-aos-delay="200" class="footer__col menu-footer__col">
+                    <div  data-aos="fade-up" class="footer__col menu-footer__col">
                         <div class="col__title">Меню:</div>
                         <ul class="col__list">
                             <li class="col__link"><a href="about.html">Про компанію</a></li>
@@ -314,7 +309,7 @@
                             <li class="col__link"><a href="">Акції</a></li>
                         </ul>
                     </div>
-                    <div  data-aos="fade-up" data-aos-delay="400" class="footer__col service-footer__col">
+                    <div  data-aos="fade-up" class="footer__col service-footer__col">
                         <div class="col__title">Послуги:</div>
                         <ul class="col__list">
                             <li class="col__link"><a href="">Власна охорона</a></li>
@@ -323,7 +318,7 @@
                             <li class="col__link"><a href="">Постійний захист </a></li>
                         </ul>
                     </div>
-                    <div  data-aos="fade-up" data-aos-delay="600" class="footer__col contacts-footer__col">
+                    <div  data-aos="fade-up" class="footer__col contacts-footer__col">
                         <div class="col__title">Контакти:</div>
                         <ul class="col__list">
                             <li class="col__link"><a class="telephone" href="tel:380735432149">+380-73-543-21-49</a></li>
@@ -351,15 +346,12 @@
                     
                         <div class="form__group">
                             <div class="form__item">
-                                <label for="name">Ім'я:</label>
                                 <input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
                             </div>
                             <div class="form__item">
-                                <label for="phone">Телефон:</label>
                                 <input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
                             </div>
                             <div class="form__item">
-                                <label for="email">Email:</label>
                                 <input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
                             </div>
                         </div>
@@ -375,6 +367,37 @@
         </div>
     </div><!-- End popup -->
 
+    <div id="popup2" class="popup"><!-- Popup 2 -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
+                <form action="" id="form" method="POST" class="form__body">
+                    <h4 class="form__title">Замовити Послугу</h4>
+                    <p class="form__sub-title">Будь ласка, введіть корректно ваші данні</p>
+                    <div class="form__wrapper">
+                    
+                        <div class="form__group">
+                            <div class="form__item">
+                                <input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
+                            </div>
+                            <div class="form__item">
+                                <input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
+                            </div>
+                            <div class="form__item">
+                                <input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
+                            </div>
+                        </div>
+                        <div class="policy__check">
+                            <input type="checkbox" id="policy" name="interest" value="policy" />
+                            <label for="policy">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+                        </div>
+
+                        <button type="submit" class="submit yelow_btns">Замовити послугу</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- End popup -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 

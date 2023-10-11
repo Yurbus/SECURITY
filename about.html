@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
 
@@ -131,7 +132,6 @@
                             <p class="item__text">Підключіть своє житло під охорону
                                 ВЕНБЕСТ та живіть без страху втрати власності.
                             </p>
-                            <a href="" class="details">Докладніше</a>
                         </div>
                         <div class="advantages__item">
                             <div class="item__image"><img src="img/security.svg" alt=""></div>
@@ -140,7 +140,6 @@
                             <p class="item__text">Безпека бізнесу – це ключовий фактор
                                 розвитку підприємства, ми надамо рішення захисту під Ваші потреби.
                             </p>
-                            <a href="" class="details">Докладніше</a>
                         </div>
                         <div class="advantages__item">
                             <div class="item__image"><img src="img/user.svg" alt=""></div>
@@ -149,7 +148,6 @@
                             <p class="item__text">Персональна охорона, супровід,
                                 інкасація, постова охорона.
                             </p>
-                            <a href="" class="details">Докладніше</a>
                         </div>
                         <div class="advantages__item">
                             <div class="item__image"><img src="img/material-symbols_connect.svg" alt=""></div>
@@ -158,7 +156,6 @@
                             <p class="item__text">Підключіть своє житло під охорону
                                 ВЕНБЕСТ та живіть без страху втрати власності.
                             </p>
-                            <a href="" class="details">Докладніше</a>
                         </div>
                         <div class="advantages__item">
                             <div class="item__image"><img src="img/noto-v1_eleven-oclock.svg" alt=""></div>
@@ -167,7 +164,6 @@
                             <p class="item__text">Безпека бізнесу – це ключовий фактор
                                 розвитку підприємства, ми надамо рішення захисту під Ваші потреби.
                             </p>
-                            <a href="" class="details">Докладніше</a>
                         </div>
                         <div class="advantages__item">
                             <div class="item__image"><img src="img/game-icons_ak47u.svg" alt=""></div>
@@ -176,7 +172,6 @@
                             <p class="item__text">Персональна охорона, супровід,
                                 інкасація, постова охорона.
                             </p>
-                            <a href="" class="details">Докладніше</a>
                         </div>
                     </div>
                 </div>
@@ -219,12 +214,15 @@
                     <div class="our-otamans__title title__h2">Наші <span>Отамани</span></div>
                 </div>
                 <div class="our-otamans__images">
-                    <div class="our-otamans__body">
-                        <img src="img/about_page/otaman1.jpg" alt="photo">
-                        <img src="img/about_page/otaman2.jpg" alt="photo">
-                        <img src="img/about_page/otaman3.jpg" alt="photo">
-                        <img src="img/about_page/otaman4.jpg" alt="photo">
-                    </div>
+             
+
+                        <div class="gallery">
+                            <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman1.jpg" alt="photo"></a>
+                            <a href="img/about_page/otaman2.jpg" class="gallery__item"><img src="img/about_page/otaman2.jpg" alt="photo"></a>
+                            <a href="img/about_page/otaman3.jpg" class="gallery__item"><img src="img/about_page/otaman3.jpg" alt="photo"></a>
+                            <a href="img/about_page/otaman4.jpg" class="gallery__item"><img src="img/about_page/otaman4.jpg" alt="photo"></a>
+                        </div>
+              
                 </div>
             </section>
 
@@ -354,7 +352,7 @@
                             <p>SECURITY SERVICE</p>
                         </div>
                     </div>
-                    <div  data-aos="fade-up" data-aos-delay="200" class="footer__col menu-footer__col">
+                    <div  data-aos="fade-up" class="footer__col menu-footer__col">
                         <div class="col__title">Меню:</div>
                         <ul class="col__list">
                             <li class="col__link"><a href="about.html">Про компанію</a></li>
@@ -363,7 +361,7 @@
                             <li class="col__link"><a href="">Акції</a></li>
                         </ul>
                     </div>
-                    <div  data-aos="fade-up" data-aos-delay="400" class="footer__col service-footer__col">
+                    <div  data-aos="fade-up" class="footer__col service-footer__col">
                         <div class="col__title">Послуги:</div>
                         <ul class="col__list">
                             <li class="col__link"><a href="">Власна охорона</a></li>
@@ -372,7 +370,7 @@
                             <li class="col__link"><a href="">Постійний захист </a></li>
                         </ul>
                     </div>
-                    <div  data-aos="fade-up" data-aos-delay="600" class="footer__col contacts-footer__col">
+                    <div  data-aos="fade-up" class="footer__col contacts-footer__col">
                         <div class="col__title">Контакти:</div>
                         <ul class="col__list">
                             <li class="col__link"><a class="telephone" href="tel:380735432149">+380-73-543-21-49</a></li>
@@ -400,15 +398,12 @@
                     
                         <div class="form__group">
                             <div class="form__item">
-                                <label for="name">Ім'я:</label>
                                 <input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
                             </div>
                             <div class="form__item">
-                                <label for="phone">Телефон:</label>
                                 <input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
                             </div>
                             <div class="form__item">
-                                <label for="email">Email:</label>
                                 <input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
                             </div>
                         </div>
@@ -418,6 +413,38 @@
                         </div>
 
                         <button type="submit" class="submit yelow_btns">Замовити захист</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- End popup -->
+
+    <div id="popup2" class="popup"><!-- Popup 2 -->
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="img/close.svg" alt="close"></a>
+                <form action="" id="form" method="POST" class="form__body">
+                    <h4 class="form__title">Замовити Послугу</h4>
+                    <p class="form__sub-title">Будь ласка, введіть корректно ваші данні</p>
+                    <div class="form__wrapper">
+                    
+                        <div class="form__group">
+                            <div class="form__item">
+                                <input type="text" id="name" name="Ім'я:" class="form__input input-form" placeholder="Ваше ім'я:">
+                            </div>
+                            <div class="form__item">
+                                <input type="tel" id="phone" name="Телефон:" class="form__input input-form" placeholder="Ваш телефон:">
+                            </div>
+                            <div class="form__item">
+                                <input type="email" id="email" name="E-mail" class="form__input input-form" placeholder="Електронна пошта:">
+                            </div>
+                        </div>
+                        <div class="policy__check">
+                            <input type="checkbox" id="policy" name="interest" value="policy" />
+                            <label for="policy">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+                        </div>
+
+                        <button type="submit" class="submit yelow_btns">Замовити послугу</button>
                     </div>
                 </form>
             </div>
@@ -435,6 +462,16 @@
     <script src="js/popups.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: "a",
+                type : 'image',
+                gallery : {
+                enabled : true
+            }
+            });
+    </script>
 
 </body>
 </html>

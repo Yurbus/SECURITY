@@ -408,7 +408,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   background: #171717;
-  padding: 64px 46px 100px;
+  padding: 64px 46px;
   transition: all 0.3s ease 0s;
 }
 .advantages__item:hover {
