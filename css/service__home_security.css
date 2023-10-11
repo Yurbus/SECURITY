@@ -362,7 +362,7 @@ body.lock {
 }
 
 .tab > label:hover {
-  background: #FFE30F;
+  background: rgba(255, 227, 15, 0.5333333333);
   color: #000;
 }
 
@@ -413,6 +413,16 @@ body.lock {
 .additional__col .col__image img {
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(100%);
+}
+.additional__col .col__image img:hover {
+  filter: grayscale(0);
+}
+.additional__col:hover {
+  cursor: pointer;
+}
+.additional__col:hover .col__text h3 {
+  color: #FFE30F;
 }
 .additional__col .col__text {
   padding: 24px 0;

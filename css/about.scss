@@ -279,7 +279,7 @@ body.lock {
 	flex-direction: column;
 	align-items: center;
 	background: #171717;
-	padding: 64px 46px 100px;
+	padding: 64px 46px;
 	transition: all 0.3s ease 0s;
 	&:hover {
 		background: #1f1f1f;
@@ -344,9 +344,10 @@ body.lock {
 }
 .our-otamans__images {
 }
-.our-otamans__body {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 	img {
 		transition: all 0.6s ease 0s;
 		&:hover {
