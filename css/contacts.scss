@@ -214,6 +214,10 @@ body.lock {
 	align-items: center;
 }
 .location__map {
+	position: relative;
+	img {
+		object-fit: cover;
+	}
 }
 iframe {
 	width: 100%;

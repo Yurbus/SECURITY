@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
 
@@ -29,7 +30,6 @@
                         <ul class="desktop-menu__list">
                             <li class="desktop-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="service.html">Послуги</a></li>
-                            <li class="desktop-menu__link"><a class="menu__link" href="">Акції</a></li> 
                             <li class="desktop-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="#">Ціни</a></li>                 
                         </ul>
@@ -52,7 +52,6 @@
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
                             <li class="mobile-menu__link"><a class="menu__link" href="service.html">Послуги</a></li>
-                            <li class="mobile-menu__link"><a class="menu__link" href="">Акції</a></li> 
                             <li class="mobile-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>
                             <li class="mobile-menu__link"><a class="menu__link" href="#">Ціни</a></li>                 
                         </ul>
@@ -80,8 +79,12 @@
                 <div class="location__container">
                     <div class="address__body">
                         <div class="location__map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1285.2614374324044!2d35.05578244291167!3d48.45950590467954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2da48bcb6c5%3A0xf7530335045060be!2z0L_RgC3Rgi4g0JTQvNC40YLRgNC40Y8g0K_QstC-0YDQvdC40YbQutC-0LPQviwgMzIsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1696778192291!5m2!1sru!2sua" 
-                            width="1170" height="345" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="gallery_img">
+                                <a href="img/map2.jpg"><img src="img/map2.jpg" alt="image"></a>
+                            </div>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1285.2614374324044!2d35.05578244291167!3d48.45950590467954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2da48bcb6c5%3A0xf7530335045060be!2z0L_RgC3Rgi4g0JTQvNC40YLRgNC40Y8g0K_QstC-0YDQvdC40YbQutC-0LPQviwgMzIsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1696778192291!5m2!1sru!2sua" 
+                            width="1170" height="345" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            
                         </div>
                         <div class="location__address">
                             <div class="address__city">
@@ -209,8 +212,8 @@
                             </div>
                         </div>
                         <div class="policy__check">
-                            <input type="checkbox" id="policy" name="interest" value="policy" />
-                            <label for="policy">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+                            <input type="checkbox" id="policy_contacts" name="interest" value="policy" />
+                            <label for="policy_contacts">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
                         </div>
 
                         <button type="submit" class="submit yelow_btns">Замовити захист</button>
@@ -241,8 +244,8 @@
                             </div>
                         </div>
                         <div class="policy__check">
-                            <input type="checkbox" id="policy" name="interest" value="policy" />
-                            <label for="policy">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
+                            <input type="checkbox" id="policy_contacts2" name="interest" value="policy" />
+                            <label for="policy_contacts2">Я погоджуюсь з правилами <a href="#" target="_blank">політики конфіденційності</a></label>
                         </div>
 
                         <button type="submit" class="submit yelow_btns">Замовити послугу</button>
@@ -263,6 +266,15 @@
     <script src="js/popups.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slider.js"></script>
-
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(".gallery_img").magnificPopup({
+            delegate: "a",
+                type : 'image',
+                gallery : {
+                enabled : true
+            }
+            });
+    </script>
 </body>
 </html>
