@@ -286,7 +286,7 @@ body.lock {
 }
 
 .tab > label {
-	padding: 17px 12px;
+	padding: 17px 20px;
 	cursor: pointer;
 	transition: color .15s ease-in-out;
 	color: #808080;
@@ -814,6 +814,7 @@ body.lock {
 	}
 	.title__h2 {
 		font-size: 20px;
+		margin-bottom: -28px;
 	}
 	.feedback__title .title_h2-right {
 		margin-left: 0;
@@ -889,8 +890,4 @@ body.lock {
 	.feedback {
 		padding: 50px 0 100px;
 	}
-
-}
-@media screen and (max-width: 375.98px){
-	
 }

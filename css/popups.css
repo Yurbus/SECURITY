@@ -113,4 +113,16 @@
 .policy__check input[type=checkbox]:checked + label:before {
   background: #FFE30F;
   content: url(../img/check.svg);
+}
+
+@media screen and (max-width: 414.98px) {
+  .form__body {
+    padding: 40px 30px;
+  }
+  .form__title {
+    font-size: 17px;
+  }
+  .form__sub-title {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=popups.css.map */
