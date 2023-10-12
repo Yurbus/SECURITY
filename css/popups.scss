@@ -72,16 +72,8 @@
 .form__wrapper {
 	margin-top: 40px;
 }
-.form__group {
-}
 .form__item label{
 	font-family: Conthrax;
-}
-.input-form {
-}
-.submit {
-}
-.yelow_btns {
 }
 .policy__check {
 	display: flex;
@@ -116,3 +108,17 @@
 		content: url(../img/check.svg);
 	}
 }
+
+@media screen and (max-width: 414.98px){
+	.form__body {
+		padding: 40px 30px;
+	}
+	.form__title {
+		font-size: 17px;
+	}
+	.form__sub-title {
+		font-size: 14px;
+	}
+
+}
+
