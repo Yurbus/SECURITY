@@ -635,7 +635,7 @@ body.lock {
 	}
 	.header__button-mobile {
 		display: block;
-		margin-top: 50px;
+		margin-top: 100px;
 	}
 	/*-------- Mobile menu style ---------*/
 	.menu__icon {
@@ -956,6 +956,7 @@ body.lock {
 	}
 	.security_system__title {
 		margin-bottom: 32px;
+		padding: 0 3px;
 	}
 	.additional__col {
 		flex-direction: column;
@@ -968,6 +969,17 @@ body.lock {
 	}
 	.feedback {
 		padding: 50px 0 100px;
+	}
+	.consultation {
+		padding: 35px 25px;
+		.form__title {
+			text-align: center;
+			font-size: 15px;
+		}
+		.form__sub-title {
+			font-size: 13px;
+			text-align: center;
+		}
 	}
 
 }

@@ -640,7 +640,7 @@ body.lock {
 	}
 	.header__button-mobile {
 		display: block;
-		margin-top: 50px;
+		margin-top: 100px;
 	}
 	/*-------- Mobile menu style ---------*/
 	.menu__icon {
@@ -919,13 +919,8 @@ body.lock {
 }
 
 @media screen and (max-width:479.98px) {
-	.main__content {
-		h1 {
-			font-size: 41px;
-		}
-		h3 {
-			font-size: 16px;
-		}
+	.main__body .main__title {
+		font-size: 32px;
 	}
 
 	.logo-footer__col {
@@ -972,6 +967,7 @@ body.lock {
 
 	.feedback__title {
 		margin-bottom: 32px;
+		padding: 0 3px;
 		.title__h2 {
 			font-size: 20px;
 		}

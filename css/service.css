@@ -488,7 +488,7 @@ body.lock {
   }
   .header__button-mobile {
     display: block;
-    margin-top: 50px;
+    margin-top: 100px;
   }
   /*-------- Mobile menu style ---------*/
   .menu__icon {
@@ -652,6 +652,9 @@ body.lock {
   }
 }
 @media screen and (max-width: 479.98px) {
+  .main__body .main__title {
+    font-size: 32px;
+  }
   .header__logo {
     display: flex;
     flex-direction: column;

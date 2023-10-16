@@ -656,7 +656,7 @@ body.lock {
   }
   .header__button-mobile {
     display: block;
-    margin-top: 50px;
+    margin-top: 100px;
   }
   /*-------- Mobile menu style ---------*/
   .menu__icon {
@@ -936,6 +936,7 @@ body.lock {
   }
   .feedback__title {
     margin-bottom: 32px;
+    padding: 0 3px;
   }
   .feedback__title .title__h2 {
     font-size: 20px;
@@ -963,5 +964,16 @@ body.lock {
   }
   .col__list .col__link .telephone {
     font-size: 24px;
+  }
+  .consultation {
+    padding: 35px 25px;
+  }
+  .consultation .form__title {
+    text-align: center;
+    font-size: 15px;
+  }
+  .consultation .form__sub-title {
+    font-size: 13px;
+    text-align: center;
   }
 }/*# sourceMappingURL=index.css.map */

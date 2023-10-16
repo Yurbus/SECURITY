@@ -462,7 +462,7 @@ iframe {
 	}
 	.header__button-mobile {
 		display: block;
-		margin-top: 50px;
+		margin-top: 100px;
 	}
 	/*-------- Mobile menu style ---------*/
 	.menu__icon {
@@ -755,6 +755,9 @@ iframe {
 }
 
 @media screen and (max-width:479.98px) {
+	.main__body .main__title {
+		font-size: 32px;
+	}
 	.main__content {
 		h1 {
 			font-size: 41px;
@@ -863,6 +866,20 @@ iframe {
 			.telephone {
 				font-size: 24px;
 			}
+		}
+	}
+	.feedback__title {
+		padding: 0 3px;
+	}
+	.consultation {
+		padding: 35px 25px;
+		.form__title {
+			text-align: center;
+			font-size: 15px;
+		}
+		.form__sub-title {
+			font-size: 13px;
+			text-align: center;
 		}
 	}
 
