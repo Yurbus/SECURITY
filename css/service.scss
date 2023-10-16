@@ -83,7 +83,9 @@ body.lock {
 	font-weight: 700;
 	line-height: normal;
 	padding: 14px 54px;
+	border: none;
 	background: #FFE30F;
+	cursor: pointer;
 	&:hover {
 		background: darken(#FFE30F, 10%);
 	}
@@ -202,178 +204,108 @@ body.lock {
 	}
 }
 
-/*------------ Type house style -------------------------------------*/
+/*------------ Services style -------------------------------------*/
 
-.type-house {
-	margin: 100px 0 87px;
+.services {
+	padding-top: 100px;
+	padding-bottom: 60px;
 }
-
-.type-house__title {
-	margin-bottom: 64px;
-}
-.type-house__body {
+.services__body {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 32px;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
 }
-.house__item {
-	cursor: pointer;
-	.item__image {
-		img {
-			filter: grayscale(100%); 
-			transition: all 0.3s ease 0s;
-		}
+.col {
+	padding: 0 15px;
+	margin-bottom: 20px;
 	}
-	&:hover {
-		.item__image {
-			img {
-				filter: grayscale(0%); 
-			}
-		}
-		.item__text {
-			h3 {
-				color: #FFE30F;
-			}
-		}
-	}
+.card {
+	margin: 4px;
+	background: rgba(23, 23, 23, 1);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 -10px;
 }
-
-.item__text {
-	margin-top: -4px;
+.card__img {
+	margin:0;
+	width: 100%;
+}
+.card__title {
+	margin-bottom: 10px;
+	font-weight: 700;
+	padding: 22px 18px;
 	h3 {
+		color: #FFE30F;
 		font-family: Conthrax;
-		font-size: 18px;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 		text-transform: uppercase;
-		padding: 26px 24px;
-		background: #171717;
-		transition: all 0.3s ease 0s;
+		margin-bottom: 16px;
+	}
+	p {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; 
 	}
 }
-
-/*------------ Security system style -----------------------------------*/
-
-.security_system {
-	margin-top: 140px;
-}
-.security_system__body {
-}
-
-.tab {
+.card__footer {
+	margin-top: auto;
+	font-size: 10px;
 	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	margin-top: 64px;
-}
-
-.tab > input[type="radio"] {
-	display: none;
-}
-
-.tab-content {
-	display: none;
-	width: 100%;
-	margin-top: 1rem;
-}
-
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3,
-#tab-btn-4:checked~#content-4 {
-	display: block;
-}
-
-.tab > label {
-	padding: 17px 20px;
-	cursor: pointer;
-	transition: color .15s ease-in-out;
-	color: #808080;
-	background: #171717;
-	font-family: Conthrax;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	text-transform: uppercase;
-}
-
-.tab > label:hover {
-	background: #ffe30f88;
-	color: #000;
-}
-
-.tab > input[type="radio"]:checked + label {
-	background: #FFE30F;
-	color: #000;
-}
-.tabContent-in {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
 	align-items: center;
-	.tabContent__img {
+	padding: 0 18px 22px;
+	.price__item {
+		font-size: 12px;
+		font-family: Conthrax;
+		li {
+			margin-bottom: 8px;
+			span {
+				font-size: 24px;
+			}
+		}
+	}
+	.price__btn {
+		color: #000;
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+}
+.more__wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	.gallery__btn {
+		display: flex;
+	}
+}
+.des {
+    display: none;
+}
 
-	}
-	.tabContent__text {
-		margin-left: 50px;
-		h4 {
-			font-family: Conthrax;
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 600;
-			line-height: normal;
-			text-transform: uppercase;
-			margin-bottom: 24px;
-		}
-		p {
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 124%; 
-		}
-	}
-}
+// .services__item:not(:nth-child(-n + 6)) {
+// 	display: none;
+// }
+// @media screen and (max-width:767.98px) {
+// 	.services__item:not(:nth-child(-n + 4)) {
+// 		display: none;
+// 	}
+// }
+// @media screen and (max-width:559.98px) {
+// 	.services__item:not(:nth-child(-n + 3)) {
+// 		display: none;
+// 	}
+// }
 
-/*------------ Additional style -----------------------------------*/
 
-.additional {
-	padding: 100px 0 50px;
-}
-.additional__title {
-	margin-bottom: 64px;
-}
-.additional__body {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 30px;
-}
-.additional__col {
-	.col__image {
-		img {
-			object-fit: cover;
-		}
-	}
-	.col__text {
-		padding: 24px 0;
-		h3 {
-			font-family: Conthrax;
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 600;
-			line-height: normal;
-			text-transform: uppercase;
-			margin-bottom: 18px;
-		}
-		p {
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 140%; 
-		}
-	}
-	
-}
 
 
 /*------------ Feedback style -----------------------------------*/
@@ -542,6 +474,11 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+@media screen and (max-width:1100.98px) {
+	.services__body {
+		grid-template-columns: 1fr 1fr;
+	}
+}
 @media screen and (max-width:959.98px) {
 	.header__desktop-menu {
 		display: none;
@@ -666,19 +603,7 @@ body.lock {
 }
 
 @media screen and (max-width:859.98px) {
-	.additional__body {
-		gap: 15px;
-	}
-	.additional__col {
-		.col__text {
-			h3 {
-				font-size: 18px;
-			}
-			p {
-				font-size: 13px;
-			}
-		}
-	}
+	
 
 }
 
@@ -704,26 +629,14 @@ body.lock {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
-
-	.tabContent-in {
-		grid-template-columns: 1fr;
-	}
-	.tabContent-in .tabContent__text {
-		margin-left: 0;
-		margin-top: 30px;
-	}
-
-}
-
-@media screen and (max-width:659.98px) {
-	.additional__body {
-		grid-template-columns: 1fr;
-	}
-	.additional__col {
-		display: flex;
-		align-items: center;
-		.col__text {
-			margin-left: 30px;
+	// .services__body {
+	// 	grid-template-columns: 1fr;
+	// }
+	.card__footer {
+		align-items: baseline;
+		flex-direction: column;
+		.price__item {
+			margin-bottom: 12px;
 		}
 	}
 
@@ -751,6 +664,14 @@ body.lock {
 			max-width: none;
 			text-align: center;
 			margin-top: 40px;
+		}
+	}
+	.services__body {
+		grid-template-columns: 1fr;
+		.card__footer {
+			.price__btn {
+				width: 100%;
+			}
 		}
 	}
 
@@ -878,15 +799,7 @@ body.lock {
 	.security_system__title {
 		margin-bottom: -24px;
 	}
-	.additional__col {
-		flex-direction: column;
-		margin-bottom: 30px;
-		.col__image {
-			img {
-				height: 270px;
-			}
-		}
-	}
+
 	.feedback {
 		padding: 50px 0 100px;
 	}
