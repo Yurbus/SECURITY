@@ -48,10 +48,19 @@ body.lock {
 }
 /*---------------------------*/
 [class*="__container"] {
-	max-width: 1170px;
+	max-width: 1728px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+@media screen and (max-width:1440px) {
+	[class*="__container"] {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+}
+
 /*---------------------------*/
 .page {
 	flex: 1 1 auto;
@@ -475,18 +484,18 @@ body.lock {
 		margin-bottom: 5px;
 	}
 	.title_h2-right {
-		margin-left: 33%;
+		margin-left: 21%;
 	}
 }
 .feedback__body {
-	display: flex;
-}
-.feedback__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .consultation {
 	background: #1A1A1A;
 	padding: 64px 58px;
-	width: 660px;
+	width: 100%;
+	height: 100%;
 }
 .form__title {
 	font-size: 24px;
@@ -523,7 +532,7 @@ body.lock {
 	margin-top: 34px;
 }
 .feedback__image {
-	max-width: 492px;
+	max-width: 100%;
 	background: #FFE30F;
 	padding: 22px 17px 22px 0;
 	img {
@@ -629,6 +638,14 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+@media screen and (min-width:1439.98px) {
+	.feedback__image {
+		max-height: 550px;
+	}
+	.tab > label {
+		padding: 17px 90px;
+	}
+}
 @media screen and (max-width:959.98px) {
 	.header__desktop-menu {
 		display: none;
@@ -771,7 +788,8 @@ body.lock {
 
 @media screen and (max-width:768.98px) {
 	.feedback__body {
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 	.feedback__image {
 		display: none;

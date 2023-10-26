@@ -47,11 +47,21 @@ body.lock {
 	overflow-x: hidden;
 }
 /*---------------------------*/
+
 [class*="__container"] {
-	max-width: 1170px;
+	max-width: 1728px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+@media screen and (max-width:1440px) {
+	[class*="__container"] {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+}
+
 /*---------------------------*/
 .page {
 	flex: 1 1 auto;
@@ -227,7 +237,7 @@ body.lock {
 }
 .about__body {
 	display: grid;
-	grid-template-columns: 560px 1fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 30px;
 }
 .about__content {
@@ -352,6 +362,7 @@ body.lock {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 30px;
+	align-items: center;
 }
 
 /*------ slider -------*/
@@ -483,6 +494,7 @@ body.lock {
 }
 .feedback__title {
 	margin-bottom: 64px;
+	max-width: 1150px;
 	.title__h2 {
 		letter-spacing: 0;
 	}
@@ -491,14 +503,16 @@ body.lock {
 	}
 }
 .feedback__body {
-	display: flex;
+	// display: flex;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.feedback__form {
-}
+
 .consultation {
 	background: #1A1A1A;
 	padding: 64px 58px;
-	width: 660px;
+	width: 100%;
+	height: 100%;
 }
 .form__title {
 	font-size: 24px;
@@ -535,9 +549,11 @@ body.lock {
 	margin-top: 34px;
 }
 .feedback__image {
-	max-width: 492px;
+	// max-width: 492px;
+	max-height: 540px;
 	background: #FFE30F;
 	padding: 22px 17px 22px 0;
+	max-height: 100%;
 	img {
 		object-fit: cover;
 		height: 100%;
@@ -641,6 +657,11 @@ body.lock {
 /*============================ Media queries ==============================================*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+@media screen and (min-width:1439.98px) {
+	.feedback__image {
+		max-height: 550px;
+	}
+}
 @media screen and (max-width:959.98px) {
 	.header__desktop-menu {
 		display: none;
@@ -898,6 +919,10 @@ body.lock {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.feedback__body {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 	.feedback__body {
 		flex-direction: column;
 	}
