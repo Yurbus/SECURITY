@@ -56,11 +56,18 @@ body.lock {
 
 /*---------------------------*/
 [class*=__container] {
-  max-width: 1170px;
+  max-width: 1728px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+@media screen and (max-width: 1440px) {
+  [class*=__container] {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
 /*---------------------------*/
 .page {
   flex: 1 1 auto;
@@ -207,7 +214,7 @@ body.lock {
 
 .about__body {
   display: grid;
-  grid-template-columns: 560px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
 }
