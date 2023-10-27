@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про нас</title>
 
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/popups.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
 
@@ -209,14 +212,36 @@
                 <div class="our-otamans__container">
                     <div class="our-otamans__title title__h2">Наші <span>Отамани</span></div>
                 </div>
-                <div class="our-otamans__images">
+                <!-- <div class="our-otamans__images">
                     <div class="gallery">
                         <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman1.jpg" alt="photo"></a>
                         <a href="img/about_page/otaman2.jpg" class="gallery__item"><img src="img/about_page/otaman2.jpg" alt="photo"></a>
                         <a href="img/about_page/otaman3.jpg" class="gallery__item"><img src="img/about_page/otaman3.jpg" alt="photo"></a>
                         <a href="img/about_page/otaman4.jpg" class="gallery__item"><img src="img/about_page/otaman4.jpg" alt="photo"></a>
                     </div>
+                </div> -->
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"> <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman1.jpg" alt="photo"></a></div>
+                        <div class="swiper-slide"> <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman2.jpg" alt="photo"></a></div>
+                        <div class="swiper-slide"> <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman3.jpg" alt="photo"></a></div>
+                        <div class="swiper-slide"> <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman4.jpg" alt="photo"></a></div>
+                        <div class="swiper-slide"> <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman2.jpg" alt="photo"></a></div>
+                        <div class="swiper-slide"> <a href="img/about_page/otaman1.jpg" class="gallery__item"><img src="img/about_page/otaman1.jpg" alt="photo"></a></div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
             </section>
 
             <section id="reviews" class="reviews">
@@ -450,15 +475,17 @@
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/popups.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/sw_slider.js"></script>
     <script>
-        $(".gallery").magnificPopup({
-            delegate: "a",
+        $(".swiper-wrapper").magnificPopup({
+            delegate: ".swiper-slide a",
                 type : 'image',
                 gallery : {
                 enabled : true
