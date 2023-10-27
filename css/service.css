@@ -373,7 +373,8 @@ body.lock {
 .submit {
   border: none;
   cursor: pointer;
-  margin-top: 34px;
+  display: block;
+  margin: 34px auto 0;
 }
 
 .feedback__image {

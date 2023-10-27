@@ -367,6 +367,32 @@ body.lock {
   transform: scale(1.02);
 }
 
+/*------ swiper slider -------------------*/
+.swiper {
+  width: 100%;
+  height: 110%;
+}
+
+.swiper-button-prev::after {
+  color: #FFE30F;
+  font-size: 60px;
+}
+
+.swiper-button-next::after {
+  color: #FFE30F;
+  font-size: 60px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #FFE30F;
+}
+
 /*------------ Reviews style -----------------------------------*/
 .reviews {
   margin: 150px 0;
@@ -554,7 +580,8 @@ body.lock {
 .submit {
   border: none;
   cursor: pointer;
-  margin-top: 34px;
+  display: block;
+  margin: 34px auto 0;
 }
 
 .feedback__image {
